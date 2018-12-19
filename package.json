@@ -3,11 +3,10 @@
   "version": "1.0.0",
   "main": "output/index.html",
   "scripts": {
-    "build": "npm run build:functions",
-    "build:all": "npm run build:dashboard && npm run build:functions && npm run build:profiles",
+    "build": "npm run build:dashboard && npm run build:functions && npm run build:profiles",
     "build:dashboard": "mkdir -p output && cp node_modules/@speedtracker/dashboard/bundle.js output && cp node_modules/@speedtracker/dashboard/index.html output",
     "build:functions": "netlify-lambda build functions-src/",
-    "build:profiles": "cat profiles.yml | npm explore @speedtracker/dashboard -- npm run --silent build:profiles > output/profiles.js",
+    "build:profiles": "cp speedtracker.config.js output",
     "lint": "standard --verbose | snazzy",
     "watch": "netlify-lambda serve functions-src/"
   },
@@ -19,7 +18,7 @@
   },
   "dependencies": {
     "@speedtracker/api": "^0.5.0",
-    "@speedtracker/dashboard": "^0.7.0",
+    "@speedtracker/dashboard": "^0.8.0",
     "@speedtracker/mongodb": "^0.2.0"
   }
 }
