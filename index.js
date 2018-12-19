@@ -9,6 +9,7 @@ const database = new MongoDB({
   database: process.env.MONGODB_DATABASE
 })
 const api = new SpeedTracker({
+  baseUrl: process.env.URL,
   config,
   database,
   pagespeedApiKey: process.env.PAGESPEED_API_KEY,
