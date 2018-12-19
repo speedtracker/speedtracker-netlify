@@ -19,7 +19,7 @@
   },
   "dependencies": {
     "@speedtracker/api": "^0.3.0",
-    "@speedtracker/dashboard": "^0.5.0",
+    "@speedtracker/dashboard": "^0.6.0",
     "@speedtracker/mongodb": "^0.2.0"
   }
 }
