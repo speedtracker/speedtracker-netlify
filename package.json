@@ -3,7 +3,8 @@
   "version": "1.0.0",
   "main": "output/index.html",
   "scripts": {
-    "build": "npm run build:dashboard && npm run build:functions && npm run build:profiles",
+    "build": "npm run build:functions",
+    "build:all": "npm run build:dashboard && npm run build:functions && npm run build:profiles",
     "build:dashboard": "mkdir -p output && cp node_modules/@speedtracker/dashboard/bundle.js output && cp node_modules/@speedtracker/dashboard/index.html output",
     "build:functions": "netlify-lambda build functions-src/",
     "build:profiles": "cat profiles.yml | npm explore @speedtracker/dashboard -- npm run --silent build:profiles > output/profiles.js",
@@ -14,11 +15,10 @@
   "author": "Eduardo Bouças <mail@eduardoboucas.com> (https://eduardoboucas.com)",
   "license": "MIT",
   "devDependencies": {
-    "js-yaml": "^3.12.0",
     "netlify-lambda": "^1.1.1"
   },
   "dependencies": {
-    "@speedtracker/api": "^0.3.0",
+    "@speedtracker/api": "^0.4.0",
     "@speedtracker/dashboard": "^0.7.0",
     "@speedtracker/mongodb": "^0.2.0"
   }
