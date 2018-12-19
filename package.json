@@ -17,7 +17,7 @@
     "netlify-lambda": "^1.1.1"
   },
   "dependencies": {
-    "@speedtracker/api": "^0.9.0",
+    "@speedtracker/api": "^0.10.0",
     "@speedtracker/dashboard": "^0.8.0",
     "@speedtracker/mongodb": "^0.2.0"
   }
