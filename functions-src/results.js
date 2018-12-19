@@ -6,4 +6,4 @@ const database = new MongoDB({
 })
 const api = new SpeedTracker(database)
 
-module.exports.handler = api.getResultsFunction()
+module.exports.handler = api.getFunctions().results
