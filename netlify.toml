@@ -4,7 +4,18 @@
   publish = "output/"
 
 [[redirects]]
+  from = "/api/pingback/:profile"
+  to = "/.netlify/functions/pingback?profile=:profile&id=:id&key=:key"
+  query = {id = ":id", key = ":key"}
+  status = 200
+
+[[redirects]]
   from = "/api/results/:profile"
   to = "/.netlify/functions/results?profile=:profile&from=:from&to=:to"
   query = {from = ":from", to = ":to"}
+  status = 200
+
+[[redirects]]
+  from = "/api/test/:profile"
+  to = "/.netlify/functions/results?profile=:profile"
   status = 200
