@@ -17,5 +17,5 @@
 
 [[redirects]]
   from = "/api/test/:profile"
-  to = "/.netlify/functions/results?profile=:profile"
+  to = "/.netlify/functions/test?profile=:profile"
   status = 200
