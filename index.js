@@ -1,4 +1,4 @@
-const config = require('./speedtracker.config.js')
+const config = require('./output/speedtracker.config.js')
 const fs = require('fs')
 const MongoDB = require('@speedtracker/mongodb')
 const path = require('path')
