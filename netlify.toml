@@ -5,5 +5,4 @@
 
 [[redirects]]
   from = "/api/results/:profile"
-  to = "/.netlify/functions/results?profile=:profile&from=:dateFrom&to=:dateTo"
-  query = {from = ":dateFrom", to = ":dateTo"}
+  to = "/.netlify/functions/results?profile=:profile"
