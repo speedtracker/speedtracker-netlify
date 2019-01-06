@@ -1,5 +1,7 @@
 .env
 functions/
 node_modules/
-output/
+output/bundle.js
+output/index.html
+output/profiles.js
 package-lock.json
