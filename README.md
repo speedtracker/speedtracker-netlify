@@ -32,11 +32,15 @@
 
 1. With everything configured, you can now [start a test](#starting-a-test).
 
+1. Visit your dashboard at your root URL (e.g. https://speedtracker.netlify.com). Once the test has finished, the results will be displayed in the various charts. It may take some time for the test to finish – if you don't see any data, check back in a few minutes.
+
 ## Starting a test
 
-To start a test, send a `GET` request to `https://<your-netlify-url>/api/test/default`. This will instruct WebPageTest to start a test on your behalf.
+To start a test, send a `GET` request to `https://speedtracker.netlify.com/api/test/default`. This will instruct WebPageTest to start a test on your behalf.
 
-This response to this request includes some relevant information, such as the test ID. The `userUrl` property contains a link to the test status, telling you whether it's still queued, running or if it has been completed. 
+This response to this request includes some relevant information, such as the test ID. The `userUrl` property contains a link to the test status, telling you whether it's still queued, running or if it has been completed.
+
+Depending on how busy the chosen WebPageTest instance is, the test may take several minutes – or even hours – to complete. Once finished, the results will be sent back to SpeedTracker and displayed on the dashboard.
 
 ## Configuration
 
