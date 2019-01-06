@@ -7,3 +7,4 @@
   from = "/api/results/:profile"
   to = "/.netlify/functions/results?profile=:profile&from=:from&to=:to"
   query = {from = ":from", to = ":to"}
+  status = 200
