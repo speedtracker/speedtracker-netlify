@@ -3,6 +3,12 @@
   functions = "functions/"
   publish = "output/"
 
+[template.environment]
+  DEFAULT_URL = "URL of the site to be tested"
+  MONGODB_CONN_STR = "MongoDB connection string (e.g. mongodb://<username:password>@host:port)"
+  MONGODB_DATABASE = "MongoDB database name"
+  WPT_API_KEY = "WebPageTest API key"
+
 [[redirects]]
   from = "/api/pingback/:profile"
   to = "/.netlify/functions/pingback?profile=:profile&id=:id&key=:key"
