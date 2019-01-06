@@ -20,8 +20,6 @@ const config = {
   }
 }
 
-config.defaultProfileUrl = null/*@placeholder@*/;
-
 if (typeof window === 'object') {
   window.__SPEEDTRACKER_CONFIG = config
 } else if (typeof module !== 'undefined') {

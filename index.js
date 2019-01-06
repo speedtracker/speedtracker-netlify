@@ -12,7 +12,7 @@ const api = new SpeedTracker({
   baseUrl: process.env.URL,
   config,
   database,
-  pagespeedApiKey: process.env.PAGESPEED_API_KEY,
+  defaultProfileUrl: process.env.DEFAULT_URL,
   wptApiKey: process.env.WPT_API_KEY
 })
 
