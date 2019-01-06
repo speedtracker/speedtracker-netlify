@@ -4,7 +4,7 @@
   "main": "output/index.html",
   "scripts": {
     "build": "npm run build:dashboard && npm run build:config && npm run build:functions",
-    "build:config": "sed -e \"s#null\\/\\*@placeholder@\\*\/#'$FOOBAR'#g\" speedtracker.config.js > output/speedtracker.config.js",
+    "build:config": "sed -e \"s#null\\/\\*@placeholder@\\*\/#'$DEFAULT_PROFILE_URL'#g\" speedtracker.config.js > output/speedtracker.config.js",
     "build:dashboard": "mkdir -p output && cp node_modules/@speedtracker/dashboard/bundle.js output && cp node_modules/@speedtracker/dashboard/index.html output",
     "build:functions": "netlify-lambda build functions-src/",
     "lint": "standard --verbose | snazzy",
