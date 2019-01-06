@@ -2,7 +2,3 @@
   command = "npm install && npm run build"
   functions = "functions/"
   publish = "output/"
-
-[[redirects]]
-  from = "/api/results/:profile"
-  to = "/.netlify/functions/results?profile=:profile"
