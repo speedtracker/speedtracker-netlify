@@ -1,4 +1,4 @@
-# SpeedTracker
+<img src="https://speedtracker.org/assets/images/logo-full-square-inverted.png" width="300">
 
 > Website performance monitoring tool
 
