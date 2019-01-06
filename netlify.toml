@@ -2,3 +2,8 @@
   command = "npm install && npm run build"
   functions = "functions/"
   publish = "output/"
+
+[[redirects]]
+  from = "/api/results/:profile"
+  to = "/.netlify/functions/results?profile=:profile&from=:dateFrom&to=:dateTo"
+  query = {from = ":dateFrom", to = ":dateTo"}
