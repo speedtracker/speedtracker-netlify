@@ -16,8 +16,6 @@
 
 ## Setting up
 
-1. Create [a new GitHub repository](https://github.com/new).
-
 1. Click the [Deploy to Netlify](https://app.netlify.com/start/deploy?repository=https://github.com/speedtracker/speedtracker-netlify) button.
 
 1. When taken to the Netlify website, fill in the following details:
